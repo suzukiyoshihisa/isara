@@ -316,7 +316,7 @@ header {
 }
 
 .cover-img {
-  background-image: url("img/main.jpg");
+  background-image: url("../img/main.jpg");
   background-position: center;
   height: 500px;
   display: table;
@@ -366,7 +366,7 @@ header {
 }
 
 .introduction {
-  background-image: url(img/introbottom.jpg);
+  background-image: url(../img/introbottom.jpg);
   background-size: cover;
   background-position: center;
   height: 587px;
@@ -443,7 +443,7 @@ header {
 }
 
 .aboutsecond {
-  background-image: url(img/aboutsecondbg.jpg);
+  background-image: url(../img/aboutsecondbg.jpg);
   background-color: #666666;
   background-size: cover;
   background-position: center;
@@ -575,7 +575,7 @@ header {
   padding: 40px 0;
   text-align: center;
   background-color: #666666;
-  background-image: url(img/teacerbg.jpg);
+  background-image: url(../img/teacherbg.jpg);
   background-position: center;
   background-size: cover;
   color: #ffffff;
@@ -679,7 +679,7 @@ header {
   color: #ffffff;
   text-align: center;
   padding: 40px 0;
-  background-image: url(img/classbg.jpg);
+  background-image: url(../img/classbg.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -733,4 +733,330 @@ header {
 
 .classbottom .txtm {
   margin: 0;
+}
+
+.flow {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.flowimg {
+  max-width: 100%;
+  margin: 40px 0;
+}
+
+.flowdetailsp {
+  display: none;
+}
+
+.flowbox {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: #fef5e0;
+}
+
+.flowbox p {
+  margin: 20px 0;
+}
+
+.flowleft {
+  float: left;
+  padding: 20px;
+  width: 200px;
+}
+
+.flowbox:nth-child(3) > .flowleft {
+  margin-top: 40px;
+}
+
+.flowleft img {
+  max-width: 100%;
+}
+
+.flowleft .txtm {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.flowright {
+  overflow: hidden;
+  text-align: left;
+  padding: 10px 0 0;
+}
+
+.flowline {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bangkok {
+  background-image: url("../img/bangkokbg.jpg");
+  background-color: #666666;
+  background-position: center;
+  background-size: cover;
+  padding: 80px;
+  color: #ffffff;
+}
+
+.bangkokdetail {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.bangkok .txtl {
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.bangkoklist {
+  margin: 20px 0;
+}
+
+.special {
+  background-position: center calc(100% - 11px);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f7c23c;
+}
+
+.specialh2 {
+  margin-bottom: 40px;
+}
+
+.specialsp {
+  display: none;
+}
+
+.specialbox {
+  margin-top: 40pxp40;
+  border: 2px solid #ffffff;
+}
+
+.specialpeople {
+  position: relative;
+  bottom: -58px;
+  width: 45%;
+  background-color: #f7c23c;
+  margin: 0 auto;
+}
+
+.specialpc img {
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.specialdetail {
+  padding: 40px 0;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../img/specialdetail.jpg");
+  background-color: #666666;
+  background-position: center;
+  background-size: cover;
+}
+
+.specialdetail .txtl {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.specialdetail .txtm {
+  margin-bottom: 40px;
+}
+
+.tokuten {
+  width: 250px;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.tokuten .tokutenbox {
+  padding: 15px;
+  height: 250px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tokuten .txts {
+  font-size: 14px;
+}
+
+.tokutenbox .txtm {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+  widows: 100%;
+  height: 55px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.wpcf7 .wpcf7-submit {
+  background-color: #da6b64;
+  color: #ffffff;
+  padding: 10px 80px;
+  border-radius: 50px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.contactform {
+  background-color: #ebb94d;
+  padding: 40px 20%;
+  text-align: center;
+}
+
+.contactform .txtl {
+  margin: 20px 0;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form-control {
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formbtn {
+  margin-top: 20px;
+  background-color: #da6b64;
+  color: #ffffff;
+  padding: 10px 80px;
+  border-radius: 50px;
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.formbtn:hover {
+  background-color: #d84940;
+  color: #ffffff;
+}
+
+.questions {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.questions .txtl {
+  margin-bottom: 40px;
+}
+
+.questionslist {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.panel-default {
+  border: none;
+}
+
+.questionsbody {
+  border: none !important;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.questionsheading {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000 !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+.questionheading h4 a {
+  cursor: pointer;
+  display: block;
+}
+
+.questionstoggle a:after {
+  font-family: "Glyphicons Halflings";
+  content: "\e113";
+  float: right;
+  color: #e5e5e5;
+}
+
+.questionstoggle a.collapsed:after {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.footerwrap {
+  position: relative;
+  padding: 40px 15px 20px 15px;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.twitterbtn {
+  display: inline-block;
+}
+
+.facebookbtn {
+  display: inline-block;
+}
+
+.pagetop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.fa-chevron-up {
+  font-size: 30px;
+}
+
+.fa-question-circle-o:before {
+  color: #016ea9;
+}
+
+@media screen and (max-width: 768px) {
+  .txtl {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .txtm {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
