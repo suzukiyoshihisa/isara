@@ -56,6 +56,7 @@ h2, h3
 body
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", sans-serif
   letter-spacing: 1.5px
+  line-height: 1.6
 
 iframe.twitter-share-button
   margin-bottom: -5px
@@ -88,21 +89,11 @@ iframe.twitter-share-button
 .whitetxt
   color: #fff
 
-ul
-  list-style: none
-
 .container
   overflow: hidden
 
-code
-  padding: 2px 4px
-  font-size: 90%
-  color: #c7254e
-  background-color: #f9f2f4
-  border-radius: 4px
-
 /* mod-wide */
-.yellowbracketswide
+.mod-yellowbrackets
   margin: 0 auto
   position: relative
   width: 860px
@@ -111,93 +102,66 @@ code
   -webkit-box-sizing: border-box
   box-sizing: border-box
 
-.yellowbracketswide::before,
-.yellowbracketswide::after
-  position: absolute
-  content: ""
-  width: 50px
-  height: 50px
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+  &:before,
+  &:after
+    position: absolute
+    content: ""
+    width: 50px
+    height: 50px
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
 
-.yellowbracketswide::before
-  top: 0
-  left: 0
-  border-top: 4px solid #ebb94d
-  border-left: 4px solid #ebb94d
+  &:before
+    top: 0
+    left: 0
+    border-top: 4px solid #ebb94d
+    border-left: 4px solid #ebb94d
 
-.yellowbracketswide::after
-  bottom: 0
-  right: 0
-  border-bottom: 4px solid #ebb94d
-  border-right: 4px solid #ebb94d
+  &:after
+    bottom: 0
+    right: 0
+    border-bottom: 4px solid #ebb94d
+    border-right: 4px solid #ebb94d
 
-/* mod-narrow */
-.yellowbracketsnarrow
-  margin: 0 auto
-  position: relative
-  width: 860px
-  max-width: calc(100% - 40px)
-  padding: 15px 30px
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+// mod
+.pc
+  display: block
 
-.yellowbracketsnarrow::before, .yellowbracketsnarrow::after
-  position: absolute
-  content: ""
-  width: 50px
-  height: 50px
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
-
-.yellowbracketsnarrow::before
-  top: 0
-  left: 0
-  border-top: 4px solid #ebb94d
-  border-left: 4px solid #ebb94d
-
-.yellowbracketsnarrow::after
-  bottom: 0
-  right: 0
-  border-bottom: 4px solid #ebb94d
-  border-right: 4px solid #ebb94d
+.sp
+  display: none
 
 // heading
-header
+.header
   position: fixed
   z-index: 10
   background-color: #ffffff
   width: 100%
+  height: 75px
 
-.title
+.header-inner
+  align-items: center
   width: 1170px
   max-width: calc(100% - 20px)
   margin: 0 auto
   position: relative
-  padding: 20px 0
-  height: 75px
+  padding: 15px 0
+  display: flex
+  justify-content: space-between
 
-.title .logo .subtitle
-  display: inline-block
+.header-title
+  align-items: center
+  display: flex
 
-.logo
-  margin-top: -6px
-
-.logo img
+.header-logo
   width: 128px
 
-.subtitle
-  position: relative
-  bottom: -10px
-
-.subtitle p
+.header-subtitle
   font-weight: 600
-  margin-bottom: 0
+  margin-top: 20px
+  margin-left: 5px
 
-//contact
-.contactpc
+.header-contactBtn-pc
   cursor: pointer
-  position: absolute
   right: 0
   top: 16px
   color: #ffffff
@@ -207,30 +171,16 @@ header
 
   &:hover
     background-color: #d84940
-    text-decoration: none
-
-.contactpc p
-  margin: 0
-
-.contactsp
-  display: none
 
 //main
-.main
-  padding-top: 75px
-
-.cover-img
+.mainvisual
+  padding-top: 84px
   background-image: url("../img/main.jpg")
   background-position: center
   height: 500px
   display: table
   width: 100%
   background-size: cover
-
-.mainlogo
-  width: 317px
-  margin-bottom: 20px
-
 
 .cover-text
   display: table-cell
@@ -242,12 +192,16 @@ header
   background-color: #ebb94d
   padding: 30px 0
   text-align: center
-
-.conversion,
-.conversion p
   color: #ffffff
 
-.conversionbtn
+.conversion-code
+  padding: 2px 4px
+  font-size: 90%
+  color: #c7254e
+  background-color: #f9f2f4
+  border-radius: 4px
+
+.conversion-btn
   cursor: pointer
   padding: 30px 120px
   background-color: #da6b64
@@ -258,10 +212,25 @@ header
 
   &:hover
     background-color: #d84940
-    text-decoration: none
 
-  & p
-    margin: 0
+.conversion-period
+  font-size: 21px
+  font-weight: 600
+
+.conversion-sns
+  display: table
+  text-align: center
+  margin: 0 auto
+  padding-left: 0
+
+  .conversion-sns-twitter,
+  .conversion-sns-facebook
+    display: inline-block
+    vertical-align: top
+    line-height: 0
+
+.conversion-sns-twitter
+  margin-right: 5px
 
 //introduction
 .introduction
@@ -273,32 +242,35 @@ header
   padding: 40px 0
   text-align: center
 
-.contents
+.introduction-title
+  position: relative
+  margin: 0 auto
+  width: 860px
+  max-width: calc(100% - 40px)
+  padding: 15px 0px
+
+.introduction-text
   padding: 40px 0
 
-.contents p
+.introduction-text-item
   margin-bottom: 2.4rem
   font-weight: 300
 
-.underline
+.introduction-text-underline
   font-weight: bold
   background: linear-gradient(transparent 70%, #ebb94d 70%)
 
-//aboutisara
+//about
 .about
   padding: 0 0 40px 0
   background-color: #fef5e0
   text-align: center
 
-.abouticon
+.about-icon
   position: relative
   top: -40px
-
-.circle1
   color: #ffffff
   background-color: #ebb94d
-  padding: 0
-  margin: 0
   width: 80px
   height: 80px
   line-height: 80px
@@ -306,10 +278,11 @@ header
   display: inline-block
   border-radius: 50%
 
-.abouttitle p
-  margin-top: 40px
+.about-title
+  padding: 30px 0
+  margin-bottom: 40px
 
-.aboutbox
+.about-skills
   width: 1170px
   max-width: calc(100% - 40px)
   margin: 30px auto
@@ -318,20 +291,14 @@ header
   border: 2px solid #ebb94d
   border-radius: 5px
 
-.aboutbox .txts
-  margin-top: 10px
+.about-skills-item
+  padding: 10px
+  display: inline-block
   font-size: 12px
   font-weight: 300
 
-.aboutbox .container
-  margin-top: 30px
-
-.box
-  padding: 10px
-  display: inline-block
-
-//aboutsecond
-.aboutsecond
+//step
+.step
   background-image: url(../img/aboutsecondbg.jpg)
   background-color: #666666
   background-size: cover
@@ -339,17 +306,18 @@ header
   padding: 40px 0
   text-align: center
 
-.aboutsecond h2
+.step-title
   margin-bottom: 20px
 
-.aboutsecond h2,
-.aboutsecond p
+.step-subtitle,
+.step-title
   color: #ffffff
 
-.aboutsecond .container
+.step-cardBox
+  display: flex
   margin-top: 30px
 
-.sidebox
+.step-card
   padding: 30px 30px 20px
   background-color: #ffffff
   border-radius: 5px
@@ -358,53 +326,43 @@ header
   &:nth-of-type(2)
     margin: 0 1.5%
 
-.step
+.step-card-header
   background-color: #ebb94d
   border-radius: 5px
 
-.sidecontents .txtxs
+.step-card-title
   margin: 30px 0 15px
 
-.sidecontents p
-  color: #000000
+.step-card-data
   font-weight: 600
 
 .middlebox img
   padding: 30px
 
 // aboutthird
-.aboutthird
+.step-footer
   padding: 40px 0
   text-align: center
   background-color: #016ea9
   color: #ffffff
-
-.aboutthird p
-  margin: 0
 
 //leanning
 .learning
   text-align: center
   padding: 40px 0
 
-.learning .txtl
+.learning-title
   margin-bottom: 35px
 
-.learning .txtm
+.learning-subtitle
   font-weight: 300
 
-.learning .container
+.learning-list
+  display: flex
   padding: 0
   width: 860px
-  max-width: calc(100% - 40px)
 
-.container.mesage-container
-  max-width: 1028px
-
-.learning .container:nth-of-child(2)
-  max-width: 1028px
-
-.learning img
+.learning-list-image
   width: 180px
 
 //merit
