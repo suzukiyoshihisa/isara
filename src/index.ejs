@@ -19,7 +19,7 @@
             お問い合わせ / 資料請求はこちら
           </div>
           <div class="sp header-contactBtn-sp">
-            <img src="https://isara.life/wp-content/themes/isara_v2/img/form.png" />
+            <img src="https://isara.life/wp-content/themes/isara_v2/img/form.png" class="header-icon"/>
             <a href="">資料請求</a>
           </div>
         </div>
@@ -31,7 +31,7 @@
       <section class="mainvisual">
         <div class="cover-text text-center">
           <p class="txtl">プログラミングで<br>人生の安定を手に入れよう</p>
-          <img src="./img/isaralogolarge.png" class="mainlogo" alt="iSara"/>
+          <img src="./img/isaralogolarge.png" class="main-logo" alt="iSara"/>
           <h1 class="txtm">バンコクのノマドエンジニア育成講座</h1>
         </div>
       </section>
@@ -47,7 +47,7 @@
         <div class="conversion-period txtxs">
           <p>第三期生:2018年7月8日 ~ 2018年7月27日<br class="sp"/>※締め切りました</p>
           <p>第四期生:2018年12月3日 ~ 2018年12月22日<br class="sp"/>※締め切りました</p>
-          <p>&nbsp;</p>
+          <p class="pc">&nbsp;</p>
           <p>第五期生:資料請求受付中です</p>
         </div>
         <ul class="conversion-sns">
@@ -65,7 +65,7 @@
       <!-- introduction -->
       <section class="introduction">
         <div class="mod-yellowbrackets txtl">
-          <h2 class="introduction-title">エンジニアとして<br class="brsp" />本当の自由を手に入れるには?</h2>
+          <h2 class="introduction-title txtl">エンジニアとして<br class="brsp" />本当の自由を手に入れるには?</h2>
         </div>
 
         <div class="introduction-text txtm">
@@ -229,7 +229,7 @@
           </div>
           <div class="teacher-list-item teacher-list-otaki">
             <div class="teacher-detail">
-              <img class="teacher-detail-image" src="./img/yuki.png" alt="染谷 佳佑">
+              <img class="teacher-detail-image" src="./img/shohey.png" alt="大滝　昇平">
               <p class="txts">フリーランスエンジニア</p>
               <p class="txts">大滝　昇平</p>
               <div class="txtleft">
@@ -327,8 +327,8 @@
 
       <!-- flow -->
       <section class="flow">
-        <h2 class="txtl"><i class="fa fa-laptop" aria-hidden="true"></i>受講の流れ</h2>
-        <img src="./img/flow.jpg" class="flow-img"/>
+        <h2 class="flow-title txtl"><i class="fa fa-laptop" aria-hidden="true"></i>受講の流れ</h2>
+        <img src="./img/flow.jpg" class="flow-img pc"/>
 
         <!-- flow_PC　-->
         <div class="pc">
@@ -402,36 +402,37 @@
 
         <!-- SPのトグル -->
         <div class="sp">
-          <div class="panel-group">
+          <div class="panel-group" id="accordion1">
             <div class="panel panel-default">
               <div class="panel-heading flowheading">
                 <h4 class="panel-title accordion-toggle flowtoggle">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="txtm"><img src="./img/skypeconsulting.png"/>Skypeで事前コンサル</a>
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" class="txtm"><img
+                      src="./img/skypeconsulting.png" class="flow-img-sp">Skypeで事前コンサル</a>
                 </h4>
               </div>
               <div id="collapseOne" class="panel-collapse collapse in">
                 <div class="panel-body flowbody">
                   <p class="txts">現在のスキルの状況、パソコンの環境説明、渡航での注意点を話します。</p>
                   <p class="txts">簡単なテストあり</p>
-                  <p class="txtxs">iSaraでは受講費以上を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）</p>
+                  <p class="txtxs">
+                    iSaraでは受講費以上を稼げることを保障しています。従って、事前コンサル時点で簡単なテストを実施し、場合によってはお断りをしております。（テストの内容はPCの基礎知識に関するテストですので、普段からパソコンを利用する方でしたら問題ありません。テストはもちろん無料ですので、まずはお問い合わせください。）
+                  </p>
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
               <div class="panel-heading flowheading">
                 <h4 class="panel-title accordion-toggle flowtoggle">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed txtm"><img src="https://isara.life/wp-content/themes/isara_v2/img/preworks.png"/>事前課題の提出</a>
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" class="collapsed txtm"><img
+                      src="./img/preworks.png" class="flow-img-sp">事前課題の提出</a>
                 </h4>
               </div>
               <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body flowbody">
                   <p class="txts">出発前の１ヶ月前に事前課題を送ります。</p>
-                  <p class="txtxs">
-                    ０から始めるプログラミング事前学習講座、環境構築の事前学習、jQueryの事前学習講座、Bootstrapの事前学習講座、PHP
-                    / Mysqlの事前講座
-                  </p>
+                  <p class="txtxs">０から始めるプログラミング事前学習講座、環境構築の事前学習、jQueryの事前学習講座、Bootstrapの事前学習講座、PHP / Mysqlの事前講座</p>
                   <p class="txts">
-                    課題は多いですが、ここで努力が必須です。プログラミングは高付加価値なスキルです。そのためには学習が必須です。回数無制限のチャットサポート付きですので、最初は努力してください。<br />また、参加者グループコミュニティも作成するので、横の繋がりでモチベーションを高めることもできます。
+                    課題は多いですが、ここで努力が必須です。プログラミングは高付加価値なスキルです。そのためには学習が必須です。回数無制限のチャットサポート付きですので、最初は努力してください。<br>また、参加者グループコミュニティも作成するので、横の繋がりでモチベーションを高めることもできます。
                   </p>
                 </div>
               </div>
@@ -439,50 +440,28 @@
             <div class="panel panel-default">
               <div class="panel-heading flowheading">
                 <h4 class="panel-title accordion-toggle flowtoggle">
-                  <a
-                    data-toggle="collapse"
-                    data-parent="#accordion"
-                    href="#collapseThree"
-                    class="collapsed txtm"
-                    ><img
-                      src="https://isara.life/wp-content/themes/isara_v2/img/flight.png"
-                    />現地に渡航</a
-                  >
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" class="collapsed txtm"><img
+                      src="./img/flight.png" class="flow-img-sp">現地に渡航</a>
                 </h4>
               </div>
               <div id="collapseThree" class="panel-collapse collapse">
                 <div class="panel-body flowbody">
-                  <p class="txts">
-                    到着日には空港でお出迎えし、初日のオリエンテーションを行います。滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。
-                  </p>
-                  <p class="txts">
-                    iSaraは『ノマド』フリーランス養成講座です。楽しいノマド体験ができるよう、バンコクでの生活はこちらでサポートします。
-                  </p>
+                  <p class="txts">到着日には空港でお出迎えし、初日のオリエンテーションを行います。滞在先は空港からすぐの出来たてシェアハウス。美味しいタイ料理などもご紹介します。</p>
+                  <p class="txts">iSaraは『ノマド』フリーランス養成講座です。楽しいノマド体験ができるよう、バンコクでの生活はこちらでサポートします。</p>
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
               <div class="panel-heading flowheading">
                 <h4 class="panel-title accordion-toggle flowtoggle">
-                  <a
-                    data-toggle="collapse"
-                    data-parent="#accordion"
-                    href="#collapseFour"
-                    class="collapsed txtm"
-                    ><img
-                      src="https://isara.life/wp-content/themes/isara_v2/img/personwithlight.png"
-                    />実案件を通して学ぶ</a
-                  >
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFour" class="collapsed txtm"><img
+                      src="./img/personwithlight.png" class="flow-img-sp">実案件を通して学ぶ</a>
                 </h4>
               </div>
               <div id="collapseFour" class="panel-collapse collapse">
                 <div class="panel-body flowbody">
-                  <p class="txts">
-                    現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。
-                  </p>
-                  <p class="txts">
-                    案件獲得のためのメールの書き方や見積りの仕方など、他のプログラミングスクールでは教えてくれない実務スキルを学ぶことができます。
-                  </p>
+                  <p class="txts">現役フリーランスが抱える案件に加え、クラウドソーシングを使って実案件をこなします。</p>
+                  <p class="txts">案件獲得のためのメールの書き方や見積りの仕方など、他のプログラミングスクールでは教えてくれない実務スキルを学ぶことができます。</p>
                   <p class="txtxs">＊現役フリーランスがサポートします。</p>
                 </div>
               </div>
@@ -490,25 +469,15 @@
             <div class="panel panel-default">
               <div class="panel-heading flowheading">
                 <h4 class="panel-title accordion-toggle flowtoggle">
-                  <a
-                    data-toggle="collapse"
-                    data-parent="#accordion"
-                    href="#collapseFive"
-                    class="collapsed txtm"
-                    ><img
-                      src="https://isara.life/wp-content/themes/isara_v2/img/jobsupport.png"
-                    />帰国後の仕事獲得サポート付き</a
-                  >
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseFive" class="collapsed txtm"><img
+                      src="./img/jobsupport.png" class="flow-img-sp">帰国後の仕事獲得サポート付き</a>
                 </h4>
               </div>
               <div id="collapseFive" class="panel-collapse collapse">
                 <div class="panel-body flowbody">
+                  <p class="txts">経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。</p>
                   <p class="txts">
-                    経験年数の少ないフリーランスが高単価で継続的に仕事受注するコツ、それがチームを組むことです。
-                  </p>
-                  <p class="txts">
-                    iSaraではフリーランスコミュニティを形成し、帰国後のエンジニアでも継続的に稼げる仕組みを提供します。もちろん、個人で十分に稼げるようになった場合はいつでも脱退できますし、制限などは何もありません。
-                  </p>
+                    iSaraではフリーランスコミュニティを形成し、帰国後のエンジニアでも継続的に稼げる仕組みを提供します。もちろん、個人で十分に稼げるようになった場合はいつでも脱退できますし、制限などは何もありません。</p>
                 </div>
               </div>
             </div>
@@ -542,7 +511,7 @@
         <p class="special-people txts">iSaraは『実質0円』! <br class="sp" />さらなる特典もあります。</p>
 
         <div class="special-box">
-          <div class="special-box-list">
+          <div class="special-box-list pc">
             <div class="special-box-list-item">
               <div class="special-tokutenbox">
                 <p class="special-box-title txtm yellowtxt">特典1</p>
@@ -564,34 +533,36 @@
           </div>
 
           <div class="sp">
-            <div class="specialspbox">
-              <div class="specialleft">
-                <p class="txtl circle2">特典1</p>
+            <div class="special-box-list">
+              <div class="specialspbox">
+                <div class="specialleft">
+                  <p class="txtl circle2">特典1</p>
+                </div>
+                <div class="specialright">
+                  <p class="txts">
+                    参加以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。
+                  </p>
+                </div>
               </div>
-              <div class="specialright">
-                <p class="txts">
-                  参加以上の金額が稼げるまで「永久サポート」参加費用は実質0円です。
-                </p>
+              <div class="specialspbox">
+                <div class="specialleft">
+                  <p class="txtl circle2">特典２</p>
+                </div>
+                <div class="specialright">
+                  <p class="txts">
+                    フリーランスエンジニアになる為の動画講義を無料プレゼント
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="specialspbox">
-              <div class="specialleft">
-                <p class="txtl circle2">特典２</p>
-              </div>
-              <div class="specialright">
-                <p class="txts">
-                  フリーランスエンジニアになる為の動画講義を無料プレゼント
-                </p>
-              </div>
-            </div>
-            <div class="specialspbox">
-              <div class="specialleft">
-                <p class="txtl circle2">特典3</p>
-              </div>
-              <div class="specialright">
-                <p class="txts">
-                  フリーランス講師による個別コンサル(渡航前の週1回)
-                </p>
+              <div class="specialspbox">
+                <div class="specialleft">
+                  <p class="txtl circle2">特典3</p>
+                </div>
+                <div class="specialright">
+                  <p class="txts">
+                    フリーランス講師による個別コンサル(渡航前の週1回)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -600,10 +571,10 @@
 
       <!-- specialdetail -->
       <section class="specialdetail">
-        <p class="txtl">iSaraは<br class="brsp" />ボランティアではありません</p>
+        <p class="txtl">iSaraは<br class="sp" />ボランティアではありません</p>
         <p class="txtm">ここまで見ると、実質0円で各種サポートもある、<br class="sp"/>特典が多すぎて逆に怪しい。<br class="pc"/>そう思われるかもしれません。<br>しかし、iSaraが目指すことは異なります。</p>
         <h2 class="txtl mod-yellowbrackets mod-yellowbrackets-white">月10万円稼げる<br class="sp" />エンジニアを排出し続ける。</h2>
-        <p class="textm">最大の価値がこれです。<br />iSaraの卒業生が稼ぎ続けることで<br class="sp" />小さな経済が動き始めます。<br />ここに最大の価値があり、<br class="sp" />この講座はその序章にすぎません。</p>
+        <p class="txtm">最大の価値がこれです。<br />iSaraの卒業生が稼ぎ続けることで<br class="sp" />小さな経済が動き始めます。<br />ここに最大の価値があり、<br class="sp" />この講座はその序章にすぎません。</p>
       </section>
 
       <!-- message -->

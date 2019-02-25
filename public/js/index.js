@@ -89,7 +89,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n// スムーススクロール\n$(function () {\n  $('a[href^=\"#\"').click(function () {\n    const speed = 500;\n    const href = $(this).attr(\"href\");\n      const target = $((href === \"#\" || href === \"\") ? 'html' : href);\n      const position = target.offset().top;\n      $(\"html, body\").animate({ scrollTop: position }, speed, \"swing\");\n      return false;\n  })\n});\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n// スムーススクロール\n$(function () {\n  $('a[href^=\"#\"').click(function () {\n    const speed = 500;\n    const href = $(this).attr(\"href\");\n    if (href === \"#top\") {\n      const target = $((href === \"#\" || href === \"\") ? 'html' : href);\n      const position = target.offset().top;\n      $(\"html, body\").animate({ scrollTop: position }, speed, \"swing\");\n      return false;\n    }\n  })\n});\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

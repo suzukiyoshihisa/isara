@@ -163,8 +163,7 @@ iframe.twitter-share-button {
 .mod-yellowbrackets {
   margin: 0 auto;
   position: relative;
-  width: 860px;
-  max-width: calc(100% - 40px);
+  max-width: 860px;
   padding: 15px 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -221,7 +220,6 @@ iframe.twitter-share-button {
 
 .header-inner {
   align-items: center;
-  width: 1170px;
   max-width: calc(100% - 20px);
   margin: 0 auto;
   position: relative;
@@ -267,6 +265,11 @@ iframe.twitter-share-button {
   display: table;
   width: 100%;
   background-size: cover;
+}
+
+.main-logo {
+  width: 317px;
+  margin-bottom: 20px;
 }
 
 .cover-text {
@@ -340,7 +343,6 @@ iframe.twitter-share-button {
 .introduction-title {
   position: relative;
   margin: 0 auto;
-  width: 860px;
   max-width: calc(100% - 40px);
   padding: 15px 0px;
 }
@@ -384,7 +386,6 @@ iframe.twitter-share-button {
 }
 
 .about-skills {
-  width: 1170px;
   max-width: calc(100% - 40px);
   margin: 30px auto;
   padding: 30px;
@@ -422,7 +423,6 @@ iframe.twitter-share-button {
   display: flex;
   margin: 30px auto 0;
   width: calc(100% - 40px);
-  max-width: 1170px;
 }
 
 .step-card {
@@ -471,11 +471,11 @@ iframe.twitter-share-button {
 
 .learning-list {
   display: flex;
-  width: 860px;
   margin: 40px auto;
   padding: 0 10px;
   justify-content: space-between;
   align-items: center;
+  max-width: 860px;
 }
 
 .learning-list-image {
@@ -489,13 +489,13 @@ iframe.twitter-share-button {
 }
 
 .merit-inner {
-  width: 1170px;
   margin: 0 auto;
 }
 
 .merit-contents {
   display: flex;
-  margin-top: 40px;
+  margin: 40px auto;
+  max-width: 1170px;
   justify-content: space-between;
 }
 
@@ -534,8 +534,7 @@ iframe.twitter-share-button {
 }
 
 .merit-support {
-  width: 1170px;
-  min-width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
   background-color: #ffffff;
   padding: 40px 20px;
   margin: 40px auto;
@@ -647,20 +646,26 @@ iframe.twitter-share-button {
 }
 
 .answer-contents {
-  width: 780px;
   margin: 0 auto;
 }
 
 .answer-contents-item {
   display: flex;
-  padding: 20px 0;
+  padding: 20px 2%;
+}
+
+.answer-contents-item dt {
+  width: 30%;
+}
+
+.answer-contents-item dd {
+  width: 66%;
 }
 
 .answer-contents-image {
   border: solid;
   border-color: #ebb94d;
-  width: 250px;
-  height: 250px;
+  width: 100%;
 }
 
 .answer-contents-data {
@@ -742,7 +747,6 @@ iframe.twitter-share-button {
 
 .flow-box {
   display: flex;
-  width: 1170px;
   max-width: calc(100% - 40px);
   border-radius: 10px;
   margin: 0 auto;
@@ -780,7 +784,6 @@ iframe.twitter-share-button {
 }
 
 .bangkok-detail {
-  width: 1170px;
   max-width: calc(100% - 40px);
   margin: 0 auto;
 }
@@ -819,7 +822,6 @@ iframe.twitter-share-button {
 }
 
 .special-box {
-  width: 1170px;
   margin: 40px 0 0;
   padding: 40px 0;
   margin-top: 40px;
@@ -886,9 +888,9 @@ iframe.twitter-share-button {
 }
 
 .message {
-  width: 860px;
   padding: 40px 0;
   margin: 0 auto;
+  max-width: 1170px;
 }
 
 .message-title {
@@ -987,7 +989,6 @@ textarea {
 }
 
 .questionslist {
-  width: 1170px;
   max-width: calc(100% - 40px);
   margin: 0 auto;
   text-align: left;
@@ -1074,7 +1075,10 @@ textarea {
   color: #016ea9;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  #top {
+    max-width: 768px;
+  }
   .pc {
     display: none;
   }
@@ -1088,5 +1092,297 @@ textarea {
   .txtm {
     font-size: 15px;
     font-weight: 600;
+  }
+  .txts {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .txtxs {
+    font-size: 15px;
+  }
+  .mod-yellowbrackets {
+    width: 95%;
+    padding: 40px;
+  }
+  .header-title {
+    width: 100%;
+    position: relative;
+  }
+  .header-inner {
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+  }
+  .header-logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 90px;
+  }
+  .header-subtitle {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+  }
+  .header-icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .header-contactBtn-sp {
+    width: 80px;
+    padding: 9px 11px;
+    background-color: #da6b64;
+  }
+  .header-contactBtn-sp a {
+    font-size: 12px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+  }
+  .conversion-btn {
+    width: 95%;
+    margin: 25px auto;
+    padding: 15px 20px;
+  }
+  .introduction {
+    height: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .step-cardBox {
+    display: block;
+  }
+  .step-card {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .step-card:nth-of-type(2) {
+    margin: 15px 0 0;
+  }
+  .step-footer {
+    padding: 20px 0;
+  }
+  .step-footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .learning-list {
+    width: 100%;
+  }
+  .learning-list-image {
+    width: calc(90%);
+  }
+  .merit {
+    padding-bottom: 20px;
+  }
+  .merit-contents {
+    display: block;
+    padding: 0 15px;
+    margin: -100px 0 70px;
+  }
+  .merit-contents-detail {
+    padding-top: 120px;
+    margin-top: 120px;
+  }
+  .merit-contents-active,
+  .merit-contents-practice,
+  .merit-contents-free {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+  }
+  .merit-detail-title {
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  .merit-support {
+    padding: 20px;
+    margin: 15px;
+  }
+  .merit-support-text.txts {
+    font-size: 10px;
+  }
+  .merit-support-bottom {
+    font-size: 10px;
+    padding: 0 15px;
+  }
+  .teacher-list {
+    padding: 0 10px;
+  }
+  .teacher-list-item {
+    width: 100%;
+  }
+  .teacher-detail {
+    margin-top: 120px;
+  }
+  .teacher-detail-image {
+    top: -90px;
+    left: calc(50% - 60px);
+    width: 120px;
+  }
+  .answer {
+    padding: 40px 0 0;
+  }
+  .answer-contents {
+    padding: 0 15px;
+  }
+  .lesson-inner {
+    display: block;
+    padding: 0 15px;
+  }
+  .lesson-list-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .lessonbottom {
+    padding: 20px 0;
+  }
+  .flow-img-sp {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .flow-title {
+    margin: 20px 0 10px;
+  }
+  .flow {
+    padding: 20px 15px;
+  }
+  .flow .panel-group {
+    padding: 20px 0;
+  }
+  .flow .panel-group .panel {
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  .flow .panel-default {
+    cursor: pointer;
+    background-color: #fef5e0;
+    border: none;
+  }
+  .flow .panel-title {
+    padding: 10px;
+  }
+  .flow .panel-title a {
+    color: #000000;
+  }
+  .flow .flowheading {
+    text-align: left;
+  }
+  .flow .panel-body {
+    padding: 15px;
+    text-align: left;
+  }
+  .flow .flowtoggle a:after {
+    content: "\f106";
+    font-family: FontAwesome;
+    float: right;
+    color: #000000;
+    font-size: 200%;
+  }
+  .flow .flowtoggle a.collapsed:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    float: right;
+    color: #000000;
+    font-size: 200%;
+  }
+  .bangkok-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .bangkok {
+    padding: 35px;
+  }
+  .bangkok .txtxs {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .special {
+    padding: 40px 15px;
+  }
+  .special .sp .special-box-list {
+    display: block;
+  }
+  .special .special-box {
+    padding: 30px;
+    margin-top: 0;
+    width: 100%;
+  }
+  .special .specialspbox {
+    display: flex;
+  }
+  .special .specialleft {
+    width: 30%;
+  }
+  .special .specialright {
+    padding: 12px 0;
+    color: #ffffff;
+  }
+  .special .circle2 {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    color: #ebb94d;
+    background-color: #fff;
+  }
+  .special .special-people {
+    bottom: -18px;
+  }
+  .special-title {
+    margin-bottom: 20px;
+  }
+  .specialdetail .txtm {
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  .message-contents {
+    padding: 0 15px;
+    display: block;
+  }
+  .message-contents-left-img {
+    width: 100%;
+  }
+  .message-contents-right {
+    margin: 20px 0 0;
+  }
+  .contactform {
+    padding: 40px 15px;
+  }
+  .questions {
+    padding: 40px 15px;
+  }
+  .questionsheading {
+    padding: 5px;
+  }
+  .pagetop {
+    bottom: 20px;
+    right: 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .txtxs {
+    font-size: 10px;
+  }
+  .merit-contents-detail {
+    margin-top: 160px;
+  }
+  .merit-contents {
+    margin-bottom: 120px;
+  }
+  .answer-contents-data {
+    font-size: 12px;
+    padding: 0;
   }
 }
